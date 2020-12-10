@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class List extends Component {
+class Input extends Component {
     constructor(props){
         super()
         this.state = {};
@@ -8,12 +8,11 @@ class List extends Component {
     render(){
         return(
             <div>
-                <ul>
-                    {/*LIST WILL GO HERE*/}
-                </ul>
+                <label htmlFor="fruit-filter">Filter these Fruits: </label>
+                <input type="text" name="fruit-filter"/>
             </div>
         )
     }
 }
 
-export default List;
+export default Input;
