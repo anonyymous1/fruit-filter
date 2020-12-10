@@ -9,7 +9,7 @@ class FruitContainer extends Component {
         super()
         this.state = {
             // initialize the fruit list to the full list passed into props
-            fruitsToDisplay: this.props.fruits,
+            fruitsToDisplay: props.fruits,
             // initialize the filter value to an empty string
             filterValue: ""
         };
@@ -29,6 +29,10 @@ class FruitContainer extends Component {
     render(){
         // inside of input component, to access props, i will say props.value
         // inside of List component, to access props, i will say props.fruits
+        console.log("STATE");
+        console.log(this.state.fruitsToDisplay);
+        console.log("PROPS");
+        console.log(this.props.fruits);
         return(
             <div>
                 <Input value={this.state.filterValue} onChange={this.handleFilterChange}/>

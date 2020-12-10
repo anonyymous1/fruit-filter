@@ -6,8 +6,8 @@ class List extends Component {
         this.state = {};
     }
     render(){
-        const fruitItems = this.props.fruits.map((eachFruits, index)=>{
-            return <li>{eachFruit}</li>
+        const fruitItems = this.props.fruits.map((eachFruit, index)=>{
+            return <li key={index}>{eachFruit}</li>
         })
 
         return(
